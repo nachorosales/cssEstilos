@@ -1,0 +1,85 @@
+/* Reset básico y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  header {
+    background-color: #008000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header .slogan {
+    font-size: 1.2rem;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #008000;
+    border-bottom: 2px solid #008000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.grid-item {
+    overflow: hidden; /* Para asegurar que las imágenes no sobresalgan del contenedor */
+}
+
+.grid-item img {
+    width: 100%; /* Ajusta el tamaño de la imagen al tamaño del contenedor */
+    height: auto;
+}
